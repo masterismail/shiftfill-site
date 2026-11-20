@@ -1,6 +1,6 @@
 # ShiftFill website
 
-Static landing page (plain HTML/CSS/JS, no build step) ready for GitHub Pages.
+Static landing page (plain HTML/CSS/JS, no build step) configured to deploy to GitHub Pages with GitHub Actions.
 
 ```
 shiftfill-site/
@@ -37,9 +37,8 @@ Search `index.html` for `you@example.com` and `(000) 000-0000` and replace them 
 
 ## Deploying to GitHub Pages
 
-1. Create a new repository on GitHub, for example `shiftfill`.
-2. Upload the **contents** of this folder so `index.html` is at the root of the repo.
-3. Go to **Settings → Pages**, set **Source** to *Deploy from a branch*, then pick branch `main` and folder `/ (root)`. Click Save.
-4. After about a minute the site is live at `https://<your-username>.github.io/shiftfill/`.
+1. Push this folder's contents to the root of a GitHub repository. The workflow deploys on every push to `main`.
+2. In the repository, open **Settings → Pages** and set **Build and deployment → Source** to **GitHub Actions**.
+3. Open the **Actions** tab and wait for **Deploy to GitHub Pages** to finish. The workflow summary shows the published URL. For this repository, it will be `https://masterismail.github.io/shiftfill-site/`.
 
 To use your own domain, add it under **Settings → Pages → Custom domain**.
