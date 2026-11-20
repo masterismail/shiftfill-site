@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ShiftFill – shortlists from your own past workers</title>
+  <meta name="description" content="Send us your open job orders. We text your past workers in English or Spanish, screen them, and put a reviewed shortlist in your recruiters’ inbox before their day starts.">
+  <meta property="og:title" content="ShiftFill – shortlists from your own past workers">
+  <meta property="og:description" content="Fill tomorrow’s shifts from workers you already have.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Announcement bar -->
+  <div class="announce">
+    <span>Built for light-industrial staffing agencies · Free 30-day pilot on one branch</span>
+    <a href="#pricing">See how →</a>
+  </div>
+
+  <!-- Header / nav -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main">
+      <a href="#top" class="brand">
+        <svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#146EF5"/><path d="M9 16.5l4.5 4.5L23 11.5" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>ShiftFill</span>
+      </a>
+      <div class="nav-links">
+        <a href="#work">What we do</a>
+        <a href="#how">How it works</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div class="nav-cta">
+        <a href="#contact" class="btn btn-outline">Book a call</a>
+        <a href="#contact" class="btn btn-primary">Start a free pilot</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- Hero -->
+    <section class="hero container">
+      <p class="pill">For staffing agencies · English + Español</p>
+      <h1>Fill tomorrow’s shifts from workers you already have.</h1>
+      <p class="lead">Send us your open job orders. We text your past workers in English or Spanish, screen them for shift, ride and certifications, and put a reviewed shortlist in your recruiters’ inbox before their day starts.</p>
+      <div class="btn-row">
+        <a href="#contact" class="btn btn-primary btn-lg">Start a free pilot</a>
+        <a href="#video" class="btn btn-outline btn-lg js-play-video">
+          <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 6.5v7l5.5-3.5z" fill="currentColor"/></svg>
+          Watch the 20-second video
+        </a>
+      </div>
+      <p class="fine">30-day pilot on one branch · you pay only for workers who start</p>
+    </section>
+
+    <!-- Video -->
+    <section id="video" class="video-section container" aria-label="Video">
+      <div class="video-frame">
+        <!-- Put your MP4 at assets/video/shiftfill-demo.mp4 -->
+        <video id="demo-video" class="video-el" controls playsinline preload="metadata" hidden>
+          <source src="assets/video/shiftfill-demo.mp4" type="video/mp4">
+          Your browser doesn’t support HTML5 video.
+        </video>
+
+        <!-- Illustrated cover shown until the video is played -->
+        <button type="button" class="video-cover js-play-video" aria-label="Play the 20-second video: how ShiftFill works">
+          <span class="cover-card">
+            <span class="cover-eyebrow">Job order</span>
+            <span class="cover-title">10 forklift operators</span>
+            <span class="cover-sub">2nd shift · Joliet · $19/hr</span>
+          </span>
+          <span class="cover-dots" aria-hidden="true">
+            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+          </span>
+          <span class="cover-play">
+            <span class="cover-play-icon"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M6 3.5v13l11-6.5z" fill="#fff"/></svg></span>
+            <span>Watch how it works · 0:20</span>
+          </span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Tools strip -->
+    <section class="tools">
+      <div class="container tools-inner">
+        <p>We work inside the ATS and texting tool you already use</p>
+        <div class="tools-list">
+          <span>Bullhorn</span><span>TempWorks</span><span>Avionté</span><span>Ceipal</span><span>TextUs</span><span>Sense</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- What we do -->
+    <section id="work" class="section container">
+      <div class="section-head">
+        <h2>Your recruiters start the day with a shortlist, not a cold list.</h2>
+        <p class="sub">Your database already holds people who know the work. We reach them first, every week, and hand your team only the ones who said yes and qualify.</p>
+      </div>
+
+      <div class="grid grid-2 mt-56">
+        <article class="card">
+          <div>
+            <p class="eyebrow">Match / 01</p>
+            <h3>Every job order, matched to past workers</h3>
+          </div>
+          <div class="panel">
+            <div class="row row-head"><strong>10 forklift operators · 2nd shift</strong><span class="muted">Joliet</span></div>
+            <div class="row"><span class="avatar">MG</span><span class="grow">Maria G. · forklift cert</span><span class="tag">Match</span></div>
+            <div class="row"><span class="avatar">LR</span><span class="grow">Luis R. · worked here in Oct</span><span class="tag">Match</span></div>
+            <div class="row"><span class="avatar">DT</span><span class="grow">Dee T. · reach truck, 2nd shift</span><span class="tag">Match</span></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div>
+            <p class="eyebrow">Text / 02</p>
+            <h3>English or Spanish, from your own number</h3>
+          </div>
+          <div class="panel">
+            <p class="bubble out">Forklift, 2nd shift in Joliet, $19/hr. Available this week?</p>
+            <p class="bubble in">Yes, I’m in</p>
+            <p class="bubble out">¿Disponible para el 2º turno en Joliet?</p>
+            <p class="bubble in">Sí, claro</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div>
+            <p class="eyebrow">Screen / 03</p>
+            <h3>Shift, ride and certifications, checked</h3>
+          </div>
+          <div class="panel">
+            <div class="row row-check"><span>Can you work 2 PM – 10:30 PM?</span><span class="yes"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="#22CBC1"/><path d="M5.5 10.5l3 3 6-6.5" fill="none" stroke="#202328" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Yes</span></div>
+            <div class="row row-check"><span>Do you have a ride to Joliet?</span><span class="yes"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="#22CBC1"/><path d="M5.5 10.5l3 3 6-6.5" fill="none" stroke="#202328" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Yes</span></div>
+            <div class="row row-check"><span>Forklift certification current?</span><span class="yes"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="#22CBC1"/><path d="M5.5 10.5l3 3 6-6.5" fill="none" stroke="#202328" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Yes</span></div>
+            <p class="note">A person reviews every shortlist before it’s sent.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div>
+            <p class="eyebrow">Confirm / 04</p>
+            <h3>Pre-shift confirmations and a weekly report</h3>
+          </div>
+          <div class="panel">
+            <p class="bubble out">Still on for 2 PM today?</p>
+            <p class="bubble in">On my way</p>
+            <div class="report">
+              <span class="report-label">Weekly report · example</span>
+              <span><strong>10</strong> sent</span>
+              <span><strong>9</strong> showed up</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section id="how" class="section section-how container">
+      <h2>Your week with ShiftFill</h2>
+      <ol class="steps grid grid-280">
+        <li>
+          <p class="eyebrow">01</p>
+          <h3>Send us your job orders</h3>
+          <p class="muted">Email them, or give us a seat in your ATS. Monday morning or the night before both work.</p>
+        </li>
+        <li>
+          <p class="eyebrow">02</p>
+          <h3>Get a shortlist before your day starts</h3>
+          <p class="muted">We text, screen and review while you’re off the clock, so the shortlist is waiting when your recruiters log in.</p>
+        </li>
+        <li>
+          <p class="eyebrow">03</p>
+          <h3>Confirm, show up, report</h3>
+          <p class="muted">We text every worker before their shift and send you a weekly count of who we sent and who showed up.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Why it pays -->
+    <section class="band band-blue">
+      <div class="container band-inner">
+        <h2>One extra start can pay for the month.</h2>
+        <p class="sub sub-dark">A $19/hr worker at a typical markup brings in roughly $190 of gross profit a week. Keep them on assignment for eight weeks and that single start is worth about $1,500 to you.</p>
+        <div class="grid grid-240 mt-48">
+          <div class="stat"><p class="stat-num">~$190</p><p>gross profit per worker, per week*</p></div>
+          <div class="stat"><p class="stat-num">8–16 wks</p><p>a common light-industrial assignment</p></div>
+          <div class="stat"><p class="stat-num">$1,500+</p><p>what one start can be worth over 8 weeks</p></div>
+        </div>
+        <p class="footnote">*Estimate: $19/hr pay, 45% markup, about 20% employer burden, 40 hours a week. Your numbers will differ.</p>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="section container">
+      <h2 class="center">Simple pricing. Mostly paid on results.</h2>
+      <div class="pricing grid grid-300">
+        <div class="price-card">
+          <div>
+            <p class="eyebrow">Pilot · 30 days</p>
+            <p class="price"><strong>$0</strong><span class="muted"> / month</span></p>
+            <p class="muted">+ $50 for each worker who starts</p>
+          </div>
+          <ul>
+            <li>One branch, your open job orders</li>
+            <li>English and Spanish texting</li>
+            <li>A reviewed shortlist every weekday</li>
+            <li>Weekly sent vs. showed report</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary btn-block">Start a free pilot</a>
+        </div>
+        <div class="price-card featured">
+          <div>
+            <p class="eyebrow">Ongoing</p>
+            <p class="price"><span class="muted">From </span><strong>$750</strong><span class="muted"> / month</span></p>
+            <p class="muted">+ $50 for each worker who starts</p>
+          </div>
+          <ul>
+            <li>All your branches and job orders</li>
+            <li>Pre-shift confirmation texts</li>
+            <li>A named reviewer on your account</li>
+            <li>Month to month, cancel anytime</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline btn-block">Book a call</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fit -->
+    <section class="band band-gray">
+      <div class="container band-inner">
+        <h2>Fits how your agency already works.</h2>
+        <div class="grid grid-260 fit mt-48">
+          <div><h3>Texts from your number</h3><p class="muted">We use your texting tool and the consent your applicants already gave. Every STOP is honored.</p></div>
+          <div><h3>Your data stays in your ATS</h3><p class="muted">We work inside your system with the access you choose. Nothing gets exported.</p></div>
+          <div><h3>A person on every shortlist</h3><p class="muted">Automation does the reaching out. A reviewer checks every name before your team sees it.</p></div>
+          <div><h3>English and Spanish</h3><p class="muted">Workers get messages in the language they applied in, and can reply in either.</p></div>
+          <div><h3>No new software</h3><p class="muted">Nothing to install or train on. You get a shortlist and a weekly report.</p></div>
+          <div><h3>Month to month</h3><p class="muted">No long contract. If the starts stop being worth it, so do we.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section faq">
+      <p class="eyebrow">FAQ</p>
+      <h2>What you might be wondering</h2>
+      <div class="faq-list">
+        <details open>
+          <summary>Do you replace our recruiters?</summary>
+          <p>No. We do the first pass – texting, screening and confirming – so your recruiters spend their day placing people, not chasing replies.</p>
+        </details>
+        <details>
+          <summary>Whose number do the texts come from?</summary>
+          <p>Yours. We work inside the texting tool you already use, with the consent your applicants already gave, and we honor every STOP.</p>
+        </details>
+        <details>
+          <summary>Do we need to buy new software?</summary>
+          <p>No. We work in the ATS and texting tool you already pay for. You get a shortlist each weekday and a report each week.</p>
+        </details>
+        <details>
+          <summary>What counts as a start?</summary>
+          <p>A worker from our shortlist who shows up and completes their first shift. That is the only thing the per-start fee is charged on.</p>
+        </details>
+        <details>
+          <summary>When does the shortlist arrive?</summary>
+          <p>Before your recruiters’ workday begins, every weekday, with each worker’s answers on shift, ride and certifications.</p>
+        </details>
+        <details>
+          <summary>Can we try it before paying a monthly fee?</summary>
+          <p>Yes. The 30-day pilot runs on one branch with no monthly fee. You only pay for workers who start.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section id="contact" class="container cta-wrap">
+      <div class="cta">
+        <h2>See it fill one branch’s shifts, free for 30 days.</h2>
+        <!-- TODO: replace you@example.com with your real email -->
+        <p>Email <a href="mailto:you@example.com">you@example.com</a> or book a 15-minute call. We’ll start with your next set of job orders.</p>
+        <div class="btn-row">
+          <a href="mailto:you@example.com?subject=ShiftFill%20free%20pilot" class="btn btn-primary btn-lg">Start a free pilot</a>
+          <a href="#video" class="btn btn-ghost btn-lg js-play-video">Watch the video</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="brand">
+          <svg width="28" height="28" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#146EF5"/><path d="M9 16.5l4.5 4.5L23 11.5" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>ShiftFill</span>
+        </div>
+        <p class="muted">Shortlists of your own past workers, ready before your day starts.</p>
+      </div>
+      <div class="footer-cols">
+        <div>
+          <p class="footer-title">Service</p>
+          <ul>
+            <li><a href="#work">What we do</a></li>
+            <li><a href="#how">How it works</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-title">Contact</p>
+          <!-- TODO: replace with your real contact details -->
+          <ul>
+            <li><a href="mailto:you@example.com">you@example.com</a></li>
+            <li><a href="tel:+10000000000">(000) 000-0000</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container copyright">© <span id="year">2026</span> ShiftFill. All rights reserved.</div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
