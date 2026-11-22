@@ -274,6 +274,8 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:var(--btn);box
 textarea{min-height:100px;resize:vertical}
 form .btn{grid-column:1/-1;width:100%;padding:16px;font-size:1rem}
 .fnote{grid-column:1/-1;font-size:.84rem;color:var(--ink-3);text-align:center}
+.form-trap{position:absolute!important;left:-10000px!important;width:1px!important;height:1px!important;overflow:hidden!important}
+.privacy-note{grid-column:1/-1;font-size:.78rem;line-height:1.5;color:color-mix(in srgb,var(--btn-ink) 78%,transparent);margin-top:4px}.privacy-note a{color:var(--btn-ink)}
 .done{grid-column:1/-1;display:grid;gap:8px;text-align:center;padding:28px 8px;justify-items:center}
 .done p{color:var(--ink-2)}
 .bad{border-color:var(--bad)!important}
@@ -548,23 +550,6 @@ footer{border-top:1px solid var(--line);padding-block:56px 32px}
   </div>
 </section>
 
-<!-- CASE STUDY PLACEHOLDER -->
-<section aria-labelledby="case-h" style="padding-block:clamp(56px,7vw,88px)">
-  <div class="wrap">
-    <div class="quote">
-      <div style="display:grid;gap:18px">
-        <span class="tag">Placeholder · Case study</span>
-        <h2 id="case-h" style="font-size:clamp(1.4rem,2.6vw,1.9rem)">Customer stories coming soon</h2>
-        <blockquote>Reserved for a real quote from a pilot customer, added with their permission.</blockquote>
-      </div>
-      <div class="side">
-        <div class="ghost" style="width:60%"></div><div class="ghost" style="width:40%"></div>
-        <p>Remove or hide this block until the first case study is ready.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- 8. PRICING -->
 <section class="alt" id="pricing" aria-labelledby="price-h">
   <div class="wrap">
@@ -619,7 +604,7 @@ footer{border-top:1px solid var(--line);padding-block:56px 32px}
     <div class="head left" style="margin-bottom:0">
       <span class="kicker">FAQ</span>
       <h2 id="faq-h">Frequently asked questions</h2>
-      <p>Something else on your mind? Email us at <span class="ph">[EMAIL]</span></p>
+      <p>Something else on your mind? Email <a href="mailto:ismail@mohdismail.com">ismail@mohdismail.com</a>.</p>
     </div>
     <div class="faq">
       <details open><summary>How accurate is it?</summary><p>That depends on your catalog and your customers' orders, so we'd rather show you than quote a number. The free 20-order test shows exactly how we handle your real orders before you pay anything. Every line the AI isn't sure about is checked by a person, and you approve every order.</p></details>
@@ -646,9 +631,12 @@ footer{border-top:1px solid var(--line);padding-block:56px 32px}
           <li><svg viewBox="0 0 24 24"><use href="#i-check"/></svg>NDA signed before you send anything</li>
           <li><svg viewBox="0 0 24 24"><use href="#i-check"/></svg>You see results before you decide</li>
         </ul>
-        <p>Or email us at <span class="addr">[EMAIL]</span></p>
+        <p>Or email <a href="mailto:ismail@mohdismail.com">ismail@mohdismail.com</a></p>
       </div>
-      <form id="test-form" novalidate>
+      <form id="test-form" action="https://formsubmit.co/ajax/ismail@mohdismail.com" method="POST" novalidate>
+        <input type="hidden" name="_subject" value="Checkline free 20-order test request">
+        <input type="hidden" name="_template" value="table">
+        <div class="form-trap" aria-hidden="true"><label for="f-website">Leave this field empty</label><input id="f-website" name="_honey" tabindex="-1" autocomplete="off"></div>
         <div class="f"><label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name" required></div>
         <div class="f"><label for="f-company">Company</label><input id="f-company" name="company" autocomplete="organization" required></div>
         <div class="f"><label for="f-email">Work email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
@@ -657,8 +645,9 @@ footer{border-top:1px solid var(--line);padding-block:56px 32px}
         <div class="f"><label for="f-vol">Orders per day (approx.)</label><select id="f-vol" name="volume" required><option value="">Choose one</option><option>Fewer than 10</option><option>10–25</option><option>25–50</option><option>50–100</option><option>More than 100</option></select></div>
         <div class="f full"><label for="f-msg">Message <span class="opt">(optional)</span></label><textarea id="f-msg" name="message" placeholder="What kinds of orders give your team the most trouble?"></textarea></div>
         <button class="btn btn-dark" type="submit">Send me my free test</button>
-        <p class="fnote" id="fnote">We'll reply by email to set up your test.</p>
+        <p class="fnote" id="fnote" role="status" aria-live="polite">We'll reply by email to set up your test.</p>
       </form>
+      <p class="privacy-note">When you submit, your contact and company details are sent to Mohammed Ismail through FormSubmit and used to respond to your request. FormSubmit processes the information under its <a href="https://formsubmit.co/privacy.pdf" target="_blank" rel="noopener noreferrer">privacy terms</a>. This website does not store form submissions. Please do not include customer order documents or other sensitive data.</p>
     </div>
   </div>
 </section>
@@ -674,27 +663,46 @@ footer{border-top:1px solid var(--line);padding-block:56px 32px}
         <p>Overnight order entry for electrical, plumbing, HVAC and industrial distributors.</p>
       </div>
       <div><h4>Product</h4><ul><li><a href="#how">How it works</a></li><li><a href="#product">Sample order</a></li><li><a href="#pricing">Pricing</a></li><li><a href="#test">Free 20-order test</a></li></ul></div>
-      <div><h4>Company</h4><ul><li><a href="#security">Data security</a></li><li><a href="#faq">FAQ</a></li><li><a href="#privacy">Privacy policy</a></li></ul></div>
-      <div><h4>Contact</h4><ul><li><span class="ph">[EMAIL]</span></li><li><span class="ph">[US PHONE NUMBER]</span></li><li>Hyderabad, India</li></ul></div>
+      <div><h4>Company</h4><ul><li><a href="#security">Data security</a></li><li><a href="#faq">FAQ</a></li></ul></div>
+      <div><h4>Contact</h4><ul><li><a href="mailto:ismail@mohdismail.com">ismail@mohdismail.com</a></li><li>Mohammed Ismail</li><li>Hyderabad, India</li></ul></div>
     </div>
-    <div class="legal"><span>© 2026 checkline. All rights reserved.</span><nav aria-label="Legal"><a href="#privacy">Privacy policy</a></nav></div>
+    <div class="legal"><span>© 2026 checkline. All rights reserved.</span></div>
   </div>
 </footer>
 
 <script>
 (function(){
   var form=document.getElementById('test-form');
-  form.addEventListener('submit',function(e){
+  if(!form)return;
+  var note=document.getElementById('fnote');
+  var submitButton=form.querySelector('button[type="submit"]');
+  form.addEventListener('submit',async function(e){
     e.preventDefault();
     var first=null;
     form.querySelectorAll('[required]').forEach(function(el){
-      var ok=el.value.trim()!=='' && (el.type!=='email'||/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(el.value));
+      var ok=el.value.trim()!=='' && (el.type!=='email'||/^[^@\s]+@[^\s@]+\.[^\s@]+$/.test(el.value));
       el.classList.toggle('bad',!ok);
       if(!ok&&!first)first=el;
     });
-    if(first){document.getElementById('fnote').textContent='Please fill in your name, company, a valid email, your ERP and order volume.';first.focus();return;}
-    var name=document.getElementById('f-name').value.trim().split(' ')[0].replace(/[<>&"]/g,'');
-    form.innerHTML='<div class="done"><div class="ico"><svg viewBox="0 0 24 24"><use href="#i-check"/></svg></div><h3>Thanks, '+name+'.</h3><p>We\'ll email you to set up your free 20-order test.</p><p class="fnote">Preview only: this form is not connected yet, so nothing was sent.</p></div>';
+    if(first){note.textContent='Please fill in your name, company, a valid email, your ERP and order volume.';first.focus();return;}
+    if(form.querySelector('[name="_honey"]').value)return;
+    submitButton.disabled=true;
+    submitButton.textContent='Sending…';
+    note.textContent='Sending your request securely…';
+    var payload=Object.fromEntries(new FormData(form).entries());
+    payload._replyto=payload.email;
+    payload._url=window.location.href.split('#')[0];
+    try{
+      var response=await fetch(form.action,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(payload)});
+      var result=await response.json();
+      if(!response.ok||result.success===false)throw new Error('Submission failed');
+      var firstName=document.getElementById('f-name').value.trim().split(/\s+/)[0].replace(/[<>&"]/g,'');
+      form.innerHTML='<div class="done"><div class="ico"><svg viewBox="0 0 24 24"><use href="#i-check"/></svg></div><h3>Thanks, '+firstName+'.</h3><p>Your request was submitted. Mohammed Ismail will follow up by email.</p></div>';
+    }catch(error){
+      note.textContent='We could not send your request just now. Please email ismail@mohdismail.com and we’ll help you directly.';
+      submitButton.disabled=false;
+      submitButton.textContent='Try again';
+    }
   });
 })();
 </script>
